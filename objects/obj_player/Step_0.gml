@@ -34,18 +34,9 @@ y += _direction_y
 	
 	if(keyboard_check_pressed(vk_space)){
 		var _shoot = instance_create_layer(x,y - 20,"Instances",obj_shoot);
+		_shoot._bullet_player = true
 		_shoot.speed = _speed_bullet
 		_shoot.direction = image_angle
+
 	}
 #endregion 
-
-#region death
-	if(place_meeting(x,y,obj_enemy)){
-		_health -= 1
-		image_blend = c_red
-		image_blend = c_white
-		
-		if(_health == 0)
-			instance_destroy()
-	}
-#endregion

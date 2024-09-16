@@ -1,9 +1,7 @@
 script_execute(kill_player)
+
 if(place_meeting(x ,y ,obj_shoot) && obj_shoot._bullet_player){
 	script_execute(take_damage)
+	alarm[0] = 0.1 * game_get_speed(gamespeed_fps)
 }
 
-if(instance_exists(obj_player))
-	move_towards_point(obj_player.x,obj_player.y,_velocity)
-else
-	speed = 0

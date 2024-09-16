@@ -1,2 +1,3 @@
-if(place_meeting(x,y,obj_enemy) or place_meeting(x,y,obj_wall))
-	instance_destroy()	
+if(!_bullet_player)
+	script_execute(kill_player)
+	
