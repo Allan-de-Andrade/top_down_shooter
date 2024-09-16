@@ -1,5 +1,5 @@
 script_execute(kill_player)
-if(place_meeting(x ,y ,obj_shoot) && obj_shoot._bullet_player){
+if(place_meeting(x ,y ,obj_shoot_player)){
 	script_execute(take_damage)
 }
 

@@ -33,7 +33,7 @@ y += _direction_y
 	image_angle += sin(degtorad(_dir - image_angle)) * _rotation_speed;
 	
 	if(keyboard_check_pressed(vk_space)){
-		var _shoot = instance_create_layer(x,y - 20,"Instances",obj_shoot);
+		var _shoot = instance_create_layer(x,y - 20,"Instances",obj_shoot_player);
 		_shoot._bullet_player = true
 		_shoot.speed = _speed_bullet
 		_shoot.direction = image_angle

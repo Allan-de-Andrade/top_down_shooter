@@ -17,9 +17,10 @@
     {"name":"Sprites","order":1,"path":"folders/Sprites.yy",},
   ],
   "ResourceOrderSettings":[
-    {"name":"obj_enemy_2","order":4,"path":"objects/obj_enemy_2/obj_enemy_2.yy",},
-    {"name":"obj_enemy","order":3,"path":"objects/obj_enemy/obj_enemy.yy",},
-    {"name":"obj_shoot","order":2,"path":"objects/obj_shoot/obj_shoot.yy",},
+    {"name":"obj_enemy_2","order":3,"path":"objects/obj_enemy_2/obj_enemy_2.yy",},
+    {"name":"obj_enemy","order":5,"path":"objects/obj_enemy/obj_enemy.yy",},
+    {"name":"obj_shoot_enemy","order":4,"path":"objects/obj_shoot_enemy/obj_shoot_enemy.yy",},
+    {"name":"obj_shoot_player","order":2,"path":"objects/obj_shoot_player/obj_shoot_player.yy",},
     {"name":"obj_wall","order":1,"path":"objects/obj_wall/obj_wall.yy",},
     {"name":"spr_enemy_2","order":4,"path":"sprites/spr_enemy_2/spr_enemy_2.yy",},
     {"name":"spr_enemy","order":3,"path":"sprites/spr_enemy/spr_enemy.yy",},

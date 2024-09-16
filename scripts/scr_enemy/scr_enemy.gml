@@ -1,6 +1,6 @@
 function take_damage()
 {
-	instance_destroy(obj_shoot)
+	instance_destroy(obj_shoot_player)
 	image_blend = c_red
 	_health -= 1
 	alarm[0] = 0.1 * game_get_speed(gamespeed_fps)
@@ -10,6 +10,7 @@ function take_damage()
 
 function kill_player()
 {
-	if(place_meeting(x,y,obj_player))
+	if(place_meeting(x,y,obj_player)){
 		instance_destroy(obj_player)
+	}
 }

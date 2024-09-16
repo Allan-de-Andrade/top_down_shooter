@@ -1,12 +1,12 @@
 {
   "$GMObject":"",
-  "%Name":"obj_shoot",
+  "%Name":"obj_shoot_enemy",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_shoot",
+  "name":"obj_shoot_enemy",
   "overriddenProperties":[],
   "parent":{
     "name":"Objetos",
@@ -29,7 +29,7 @@
   "properties":[],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
-  "solid":true,
+  "solid":false,
   "spriteId":{
     "name":"spr_shoot",
     "path":"sprites/spr_shoot/spr_shoot.yy",
