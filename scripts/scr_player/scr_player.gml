@@ -34,6 +34,7 @@ function dash(){
 	if(_can_dash){
 		_can_dash = false
 		_velocity  = _dash_velocity
+		_is_dashing = true
 		alarm[0] = _dash_duraction * game_get_speed(gamespeed_fps)
 	}
 }
