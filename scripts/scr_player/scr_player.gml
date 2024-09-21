@@ -4,8 +4,11 @@ function movement(){
 	var _up = keyboard_check(vk_up) or keyboard_check(ord("W"))
 	var _down = keyboard_check(vk_down) or keyboard_check(ord("S"))
 
-	var _direction_x = (_right - _left) * _velocity
-	var _direction_y = (_down - _up) * _velocity
+    _direction_x = (_right - _left) * _velocity
+	_direction_y = (_down - _up) * _velocity
+	var _rotation_direction = point_direction(x, y, mouse_x, mouse_y);
+	image_angle += sin(degtorad(_rotation_direction - image_angle)) * _rotation_speed;
+
 	
 	if(place_meeting(x + _direction_x,y,obj_wall))
 	{
@@ -38,11 +41,9 @@ function dash(){
 function shoot(){
 	movement()
 	
-	var _dir = point_direction(x, y, mouse_x, mouse_y);
-	image_angle += sin(degtorad(_dir - image_angle)) * _rotation_speed;
 	var _shoot = instance_create_layer(x,y - 20,"Instances",obj_shoot_player);
-	
 	_shoot._bullet_player = true
 	_shoot.speed = _speed_bullet
 	_shoot.direction = image_angle
+	_player_state = movement
 }

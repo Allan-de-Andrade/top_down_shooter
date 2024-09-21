@@ -1,9 +1,11 @@
 function take_damage()
 {
-	instance_destroy(obj_shoot_player)
+
 	image_blend = c_red
 	_health -= 1
 	alarm[0] = 0.1 * game_get_speed(gamespeed_fps)
+	instance_destroy(obj_shoot_player.id)
+	
 	if(_health == 0)
 		instance_destroy()
 }

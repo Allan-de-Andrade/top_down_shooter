@@ -1,6 +1,6 @@
 
 
-if(mouse_check_button_pressed(0)){
+if(keyboard_check_pressed(vk_space)){
 	_player_state =shoot
 }
 
