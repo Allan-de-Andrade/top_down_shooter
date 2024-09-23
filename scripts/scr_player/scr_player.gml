@@ -6,9 +6,14 @@ function movement(){
 
     _direction_x = (_right - _left) * _velocity
 	_direction_y = (_down - _up) * _velocity
-	var _rotation_direction = point_direction(x, y, mouse_x, mouse_y);
-	image_angle += sin(degtorad(_rotation_direction - image_angle)) * _rotation_speed;
-
+	
+	var _face_direction = point_direction(x,y,mouse_x,mouse_y)
+	_face = round(_face_direction / 90)
+	
+	if _face == 4
+		_face = 0
+	
+	sprite_index = _sprites[_face]
 	
 	if(place_meeting(x + _direction_x,y,obj_wall))
 	{
@@ -17,6 +22,7 @@ function movement(){
 		}
 		_direction_x = 0
 	}
+	
 	
 	if(place_meeting(x ,y + _direction_y,obj_wall))
 	{
@@ -42,9 +48,9 @@ function dash(){
 function shoot(){
 	movement()
 	
-	var _shoot = instance_create_layer(x,y - 20,"Instances",obj_shoot_player);
+	var _shoot = instance_create_layer(x + 10,y + _center_y,"Instances",obj_shoot_player);
 	_shoot._bullet_player = true
 	_shoot.speed = _speed_bullet
-	_shoot.direction = image_angle
+	_shoot.direction = point_direction(x,y,mouse_x,mouse_y)
 	_player_state = movement
 }
