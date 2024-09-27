@@ -8,7 +8,7 @@ _sprites[1]  = spr_wizard_idle_front
 _sprites[2] = spr_wizard_idle_left
 _sprites[3] = spr_wizard_idle_back
 
-_center_y = 28
+_center_y = 25
 _rotation_speed = 20
 _direction_x = 0
 _direction_y = 0

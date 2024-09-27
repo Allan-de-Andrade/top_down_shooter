@@ -53,8 +53,17 @@ function animation_controller(){
 
 function dash(){
 	movement()
-	
+
 	if(_can_dash){
+		with(instance_create_depth(x,y,depth + 1,obj_trail))
+		{
+			sprite_index = other.sprite_index
+			image_xscale = other.image_xscale
+			image_yscale = other.image_yscale
+			image_blend = c_aqua
+			image_alpha = 0.7
+		}
+		
 		_can_dash = false
 		_velocity  = _dash_velocity
 		_is_dashing = true
@@ -65,10 +74,14 @@ function dash(){
 function shoot(){
 	movement()
 	
-	var _shoot = instance_create_layer(x + 10,y + _center_y,"Instances",obj_shoot_player);
+	var _shoot = instance_create_layer(x,y,"Instances",obj_shoot_player);
 	_shoot._bullet_player = true
 	_shoot.speed = _speed_bullet
 	_shoot.direction = point_direction(x,y,mouse_x,mouse_y)
 	_shoot.image_angle = _shoot.direction
+	
+	if(_shoot.direction > 130 and _shoot.direction < 240)
+		_shoot.image_yscale *= -1
+		
 	_player_state = movement
 }
