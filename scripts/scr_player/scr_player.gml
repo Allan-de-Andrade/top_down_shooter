@@ -6,14 +6,7 @@ function movement(){
 
     _direction_x = (_right - _left) * _velocity
 	_direction_y = (_down - _up) * _velocity
-	
-	var _face_direction = point_direction(x,y,mouse_x,mouse_y)
-	_face = round(_face_direction / 90)
-	
-	if _face == 4
-		_face = 0
-	
-	sprite_index = _sprites[_face]
+	animation_controller()
 	
 	if(place_meeting(x + _direction_x,y,obj_wall))
 	{
@@ -34,6 +27,30 @@ function movement(){
 	
 }
 
+function animation_controller(){
+	if(_direction_x != 0 or _direction_y != 0){
+		_sprites[0] = spr_wizard_run_right
+		_sprites[1]  = spr_wizard_run_front
+		_sprites[2] = spr_wizard_run_left
+		_sprites[3] = spr_wizard_run_back
+	}
+	
+	else{
+		_sprites[0] = spr_wizard_idle_right
+		_sprites[1]  = spr_wizard_idle_front
+		_sprites[2] = spr_wizard_idle_left
+		_sprites[3] = spr_wizard_idle_back	
+	}
+	
+	var _face_direction = point_direction(x,y,mouse_x,mouse_y)
+	_face = round(_face_direction / 90)
+	
+	if _face == 4
+		_face = 0
+	
+	sprite_index = _sprites[_face]
+}
+
 function dash(){
 	movement()
 	
@@ -52,5 +69,6 @@ function shoot(){
 	_shoot._bullet_player = true
 	_shoot.speed = _speed_bullet
 	_shoot.direction = point_direction(x,y,mouse_x,mouse_y)
+	_shoot.image_angle = _shoot.direction
 	_player_state = movement
 }
