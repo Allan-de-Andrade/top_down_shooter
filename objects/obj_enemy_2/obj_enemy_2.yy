@@ -33,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_enemy_2",
-    "path":"sprites/spr_enemy_2/spr_enemy_2.yy",
+    "name":"spr_witch_right",
+    "path":"sprites/spr_witch_right/spr_witch_right.yy",
   },
   "spriteMaskId":null,
   "visible":true,

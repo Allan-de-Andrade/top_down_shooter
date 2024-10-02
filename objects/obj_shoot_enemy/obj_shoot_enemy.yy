@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_shoot",
-    "path":"sprites/spr_shoot/spr_shoot.yy",
+    "name":"spr_shoot_witch",
+    "path":"sprites/spr_shoot_witch/spr_shoot_witch.yy",
   },
   "spriteMaskId":null,
   "visible":true,

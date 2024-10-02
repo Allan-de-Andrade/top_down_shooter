@@ -42,13 +42,7 @@ function animation_controller(){
 		_sprites[3] = spr_wizard_idle_back	
 	}
 	
-	var _face_direction = point_direction(x,y,mouse_x,mouse_y)
-	_face = round(_face_direction / 90)
-	
-	if _face == 4
-		_face = 0
-	
-	sprite_index = _sprites[_face]
+
 }
 
 function dash(){

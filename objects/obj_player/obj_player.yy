@@ -34,8 +34,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_wizard_idle_back",
-    "path":"sprites/spr_wizard_idle_back/spr_wizard_idle_back.yy",
+    "name":"spr_wizard_idle_right",
+    "path":"sprites/spr_wizard_idle_right/spr_wizard_idle_right.yy",
   },
   "spriteMaskId":null,
   "visible":true,

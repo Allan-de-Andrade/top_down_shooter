@@ -30,8 +30,8 @@
   "resourceVersion":"2.0",
   "solid":true,
   "spriteId":{
-    "name":"spr_shoot",
-    "path":"sprites/spr_shoot/spr_shoot.yy",
+    "name":"spr_shoot_wizard",
+    "path":"sprites/spr_shoot_wizard/spr_shoot_wizard.yy",
   },
   "spriteMaskId":null,
   "visible":true,
