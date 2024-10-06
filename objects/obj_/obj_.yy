@@ -1,12 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"obj_shoot_enemy",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"obj_",
+  "eventList":[],
   "managed":true,
-  "name":"obj_shoot_enemy",
+  "name":"obj_",
   "overriddenProperties":[],
   "parent":{
     "name":"Objetos",
@@ -30,10 +27,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"spr_bullet_witch",
-    "path":"sprites/spr_bullet_witch/spr_bullet_witch.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }

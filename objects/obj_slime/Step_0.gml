@@ -1,5 +1,5 @@
-script_execute(kill_player)
-if(place_meeting(x ,y ,obj_shoot_player)){
+script_execute(give_damage_player)
+if(place_meeting(x ,y ,obj_bullet_wizard)){
 	script_execute(take_damage)
 }
 

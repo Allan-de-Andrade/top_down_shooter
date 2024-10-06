@@ -1,11 +1,14 @@
 {
   "$GMObject":"",
-  "%Name":"obj_shoot_player",
+  "%Name":"obj_witch",
   "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":2,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":1,"eventType":2,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_shoot_player",
+  "name":"obj_witch",
   "overriddenProperties":[],
   "parent":{
     "name":"Objetos",
@@ -28,10 +31,10 @@
   "properties":[],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
-  "solid":true,
+  "solid":false,
   "spriteId":{
-    "name":"spr_shoot_wizard",
-    "path":"sprites/spr_shoot_wizard/spr_shoot_wizard.yy",
+    "name":"spr_witch_right",
+    "path":"sprites/spr_witch_right/spr_witch_right.yy",
   },
   "spriteMaskId":null,
   "visible":true,

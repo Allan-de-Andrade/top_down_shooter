@@ -28,6 +28,8 @@ function movement(){
 }
 
 function animation_controller(){
+
+	
 	if(_direction_x != 0 or _direction_y != 0){
 		_sprites[0] = spr_wizard_run_right
 		_sprites[1]  = spr_wizard_run_front
@@ -42,7 +44,12 @@ function animation_controller(){
 		_sprites[3] = spr_wizard_idle_back	
 	}
 	
-
+	var _face_direction = point_direction(x,y,mouse_x,mouse_y)
+	_face = round(_face_direction / 90)
+	
+	if _face == 4
+		_face = 0
+	sprite_index = _sprites[_face]
 }
 
 function dash(){
@@ -68,7 +75,7 @@ function dash(){
 function shoot(){
 	movement()
 	
-	var _shoot = instance_create_layer(x,y,"Instances",obj_shoot_player);
+	var _shoot = instance_create_layer(x + 10,y,"Instances",obj_bullet_wizard);
 	_shoot._bullet_player = true
 	_shoot.speed = _speed_bullet
 	_shoot.direction = point_direction(x,y,mouse_x,mouse_y)
