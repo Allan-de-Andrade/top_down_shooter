@@ -39,7 +39,6 @@
   },
   "name":"game shooter",
   "resources":[
-    {"id":{"name":"obj_","path":"objects/obj_/obj_.yy",},},
     {"id":{"name":"obj_bullet_wizard","path":"objects/obj_bullet_wizard/obj_bullet_wizard.yy",},},
     {"id":{"name":"obj_camera","path":"objects/obj_camera/obj_camera.yy",},},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},},
@@ -49,6 +48,7 @@
     {"id":{"name":"obj_wall","path":"objects/obj_wall/obj_wall.yy",},},
     {"id":{"name":"obj_witch","path":"objects/obj_witch/obj_witch.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"id":{"name":"scr_camera","path":"scripts/scr_camera/scr_camera.yy",},},
     {"id":{"name":"scr_enemy","path":"scripts/scr_enemy/scr_enemy.yy",},},
     {"id":{"name":"scr_player","path":"scripts/scr_player/scr_player.yy",},},
     {"id":{"name":"spr_bullet_witch","path":"sprites/spr_bullet_witch/spr_bullet_witch.yy",},},

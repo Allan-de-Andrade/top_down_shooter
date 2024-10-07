@@ -1,4 +1,5 @@
 _follow = obj_player
-
-_x_to = x
-_y_to = y
+_shake_length =  0
+_shake_time = 0
+_cam_x = 0
+_cam_y = 0

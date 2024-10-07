@@ -11,14 +11,22 @@ if(instance_exists(obj_player)){
 		x = obj_player.x - random_range(250,300) 
 		y = obj_player.y	
 	}
-}
-if(instance_exists(obj_player) and instance_exists(obj_bullet_wizard)){
-	if(place_meeting(x,y,obj_bullet_wizard)){
-		script_execute(take_damage)
-		x = obj_player.x - 250
-		y = obj_player.y - 100
-		alarm[0] = 0.1 * game_get_speed(gamespeed_fps)
+	
+	
+	if(instance_exists(obj_bullet_wizard)){
+		if(place_meeting(x,y,obj_bullet_wizard)){
+			x = obj_player.x - 250
+			y = obj_player.y - 100
+			if(_teleports_remaining > 0)
+				_teleports_remaining -= 1
+			else
+				take_damage()
+				
+			alarm[0] = 0.1 * game_get_speed(gamespeed_fps)
+		}
 	}
 }
+
+
 
 

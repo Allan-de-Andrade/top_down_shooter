@@ -80,7 +80,7 @@ function shoot(){
 	_shoot.speed = _speed_bullet
 	_shoot.direction = point_direction(x,y,mouse_x,mouse_y)
 	_shoot.image_angle = _shoot.direction
-	
+	camera_shake(5,0.1)
 	if(_shoot.direction > 130 and _shoot.direction < 240)
 		_shoot.image_yscale *= -1
 		
