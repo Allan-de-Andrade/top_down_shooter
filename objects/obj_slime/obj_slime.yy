@@ -10,8 +10,8 @@
   "name":"obj_slime",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objetos",
-    "path":"folders/Objetos.yy",
+    "name":"Enemies",
+    "path":"folders/Objetos/Enemies.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -32,8 +32,8 @@
   "resourceVersion":"2.0",
   "solid":true,
   "spriteId":{
-    "name":"spr_slime",
-    "path":"sprites/spr_slime/spr_slime.yy",
+    "name":"spr_slime_right",
+    "path":"sprites/spr_slime_right/spr_slime_right.yy",
   },
   "spriteMaskId":null,
   "visible":true,

@@ -16,7 +16,7 @@ _velocity = 10
 _player_state = movement
 
 _aim_direction = point_direction(x,y,mouse_x,mouse_y)
-_speed_bullet = 15
+_speed_bullet = 30
 
 _health = 5
 _time_temporary_invencible = 1

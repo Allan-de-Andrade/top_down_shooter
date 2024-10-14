@@ -26,8 +26,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"witch",
-    "path":"folders/Sprites/enemies/witch.yy",
+    "name":"Witch",
+    "path":"folders/Sprites/Enemies/Witch.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

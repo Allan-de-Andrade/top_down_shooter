@@ -8,6 +8,23 @@ function take_damage()
 	if(_health == 0)
 		instance_destroy()
 }
+function move_to_player()
+{
+	move_towards_point(obj_player.x,obj_player.y,_velocity)
+	var _direction_to_player = point_direction(x,y,obj_player.x,obj_player.y)
+	face_direction_to_player()
+	give_damage_player()
+}
+
+function face_direction_to_player(){
+	var _face_direction = point_direction(x,y,obj_player.x,obj_player.y)
+	var _face = round(_face_direction / 90)
+	
+	if _face == 4
+		_face = 0
+	sprite_index = _sprites[_face]
+
+}
 
 function give_damage_player()
 {
