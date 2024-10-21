@@ -1,0 +1,11 @@
+_laser_max_distance = room_width * 2
+_can_shoot_laser = true
+_inactive_laser_time = 1
+_timer_destroy_laser = 1 
+_eye_cat_shooter = noone
+_length_laser = 0
+_laser_end_x = 0
+_laser_end_y = 0
+_laser_give_damage = false
+_laser_alpha = 0.01
+alarm[0] = _inactive_laser_time * game_get_speed(gamespeed_fps)

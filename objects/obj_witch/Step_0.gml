@@ -1,4 +1,6 @@
-script_execute(give_damage_player)
+if(place_meeting(x,y,obj_player))
+	script_execute(give_damage_player)
+	
 if(instance_exists(obj_player)){
 	var _face_direction = point_direction(x,y,obj_player.x,obj_player.y)
 	var _face = round(_face_direction / 90)

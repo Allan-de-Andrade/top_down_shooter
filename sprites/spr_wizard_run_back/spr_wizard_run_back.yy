@@ -1,11 +1,11 @@
 {
   "$GMSprite":"",
   "%Name":"spr_wizard_run_back",
-  "bboxMode":0,
+  "bboxMode":2,
   "bbox_bottom":31,
   "bbox_left":10,
   "bbox_right":23,
-  "bbox_top":0,
+  "bbox_top":13,
   "collisionKind":1,
   "collisionTolerance":0,
   "DynamicTexturePage":false,

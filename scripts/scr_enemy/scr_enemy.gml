@@ -11,9 +11,9 @@ function take_damage()
 function move_to_player()
 {
 	move_towards_point(obj_player.x,obj_player.y,_velocity)
-	var _direction_to_player = point_direction(x,y,obj_player.x,obj_player.y)
 	face_direction_to_player()
-	give_damage_player()
+	if(place_meeting(x,y,obj_player))
+		give_damage_player()
 }
 
 function face_direction_to_player(){
@@ -28,7 +28,7 @@ function face_direction_to_player(){
 
 function give_damage_player()
 {
-	if(place_meeting(x,y,obj_player) && !obj_player._is_dashing && !obj_player._temporary_invencible){
+	if(!obj_player._is_dashing && !obj_player._temporary_invencible){
 		obj_player._health -= 1
 		obj_player.image_alpha = 0.2
 		obj_player.image_blend = c_gray
